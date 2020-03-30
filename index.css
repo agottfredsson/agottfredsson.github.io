@@ -1,0 +1,178 @@
+ /**************
+*     Body
+**************/
+
+body {
+    background-image: url("pics/wallpaper.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px;
+}
+
+/**************
+*Navigation Bar
+**************/
+
+.topnav {
+    z-index: 9999;
+    overflow: hidden;
+    background:rgba(255,255,255, 0.05);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: right;
+    transition: 0.4s;
+    padding: 15px 0px;
+}
+
+h1#header {
+   text-align: left;
+   font-size: 1.4rem;
+   color: white;
+   font-weight: lighter;
+   font-family: sans-serif;
+   padding-left: 10px;
+}
+
+#secondHeader {
+    color:  #b22222;
+    text-align: left;
+    font-size: 1.1rem;
+    padding-left: 10px;
+}
+
+.topnav a {
+    text-decoration: none;
+    color: white;   
+}
+
+a:hover {
+  color: lightgray;
+}
+
+.links {
+    position: fixed;
+    right: 10px; 
+}
+
+/**************
+*   Content
+**************/
+
+#intro {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.apple {
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#appleLogo {
+    height: 200px;
+    width: 200px;
+    position: absolute;  
+}
+
+#appleWindow {
+    position: absolute;
+    visibility: hidden;
+}
+
+.android {
+    margin-top: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#androidLogo {
+    height: 200px;
+    max-width: 200px;
+    position: absolute;
+}
+
+#androidWindow {
+    position: absolute;
+    visibility: hidden;
+    
+}
+
+.windows {
+    height: 320px;
+    width: 220px;
+    background-color: white;
+    background: rgba(255,255,255,0.4);
+    border: 1px solid black;
+    border-radius: 25px; 
+    position: relative;
+}
+
+.inside {
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+* p {
+    color: white;
+}
+
+* h3 {
+    visibility: hidden;
+}
+
+h3 ~ span {
+    visibility: hidden;
+}
+
+h4 > span { 
+    visibility: hidden; }
+
+* h4 {
+    visibility: hidden;
+}
+
+
+/**************
+*  Constraints
+**************/
+
+@media (min-width: 690px) {
+    
+.container {
+    margin-top: 0px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.android {
+    position: relative;
+    margin-top: 100px;
+}
+
+.apple{
+    position: relative;
+}
+}
+
+
+
+
+
+

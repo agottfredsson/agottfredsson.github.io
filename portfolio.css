@@ -1,0 +1,161 @@
+/**************
+*     Body
+**************/
+
+body {
+    background-image: url("pics/wallpaper.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px;
+    /*background-image: linear-gradient(right, red, blue);*/
+}
+
+/**************
+*Navigation Bar
+**************/
+
+.topnav {
+    z-index: 9999;
+    overflow: hidden;
+    background:rgba(255,255,255, 0.05);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: right;
+    transition: 0.4s;
+    padding: 15px 0px;
+}
+
+h1#header{
+   text-align: left;
+   font-size: 1.4rem;
+   color: white;
+   font-weight: lighter;
+   font-family: sans-serif;
+   padding-left: 10px;
+}
+
+#secondHeader {
+    color: firebrick;
+    text-align: left;
+    font-size: 1.1rem;
+    padding-left: 10px;
+}
+
+.topnav a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: lightgray;
+}
+
+.links {
+    position: fixed;
+    right: 10px;
+}
+
+/**************
+*    Content
+**************/
+
+img {
+    position: absolute;
+}
+
+.container{
+    margin-top: 150px;  
+}
+
+.swapper {
+    text-align: center;
+}
+
+#bild1 {
+    position: absolute;
+}
+
+#bild2 {
+    position: relative;
+    visibility: hidden;
+}
+
+.description {
+    padding-top: 20px;
+    width: 200px;  
+    margin: auto;
+    color: white;
+}
+
+.weather {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#bild3 {
+    position: absolute;
+}
+
+#bild4 {
+    position: relative;
+    visibility: hidden;
+}
+
+.hover:hover {
+    transform: scale(1.1);
+}
+
+#weatherDesc {
+    visibility: hidden;
+}
+
+#swapperDesc {
+    visibility: hidden;
+}
+
+#bild5 {
+    position: absolute;
+}
+
+#bild6{
+    position: relative;
+}
+
+.whatamess{
+    text-align: center;
+    margin-top: 100px;
+}
+
+#whataDesc {
+    visibility: hidden;
+    text-align: center;
+}
+
+#bild6 {
+    visibility: hidden;
+}
+
+
+/**************
+*  Constraints
+**************/
+
+@media (min-width: 670px) {
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.weather {
+    margin-top: 0px;
+   
+}
+
+.whatamess {
+    margin-top: 0px;
+}  
+}
